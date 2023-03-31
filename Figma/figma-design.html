@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-wrapper">
+                <img src="./logo.png" />
+                <p>Lasles<span>VPN</span></p>
+            </div>
+            <ul id="sidebar" class="nav-links sidebar">
+                <li class="cross" onclick="toggleSidebar()">
+                    <img width="24" height="24" src="./iconmonstr-x-mark-lined.svg" alt="">
+                </li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">features</a></li>
+                <li><a href="#">pricing</a></li>
+                <li><a href="#">help</a></li>
+                <li>
+                    <ul>
+                        <li><a href="#">Sign In </a></li>
+                        <li><a href="#" class="active">Sign Up </a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="login-register">
+                <ul>
+                    <li><a href="#">Sign In </a></li>
+                    <li><a href="#" class="active">Sign Up </a></li>
+                </ul>
+            </div>
+            <div class="hamburger-menu" onclick="toggleSidebar()">
+                <img height="24" width="24" src="./iconmonstr-menu-lined.svg" />
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="banner">
+            <div class="motto">
+                <p class="main">
+                    Want anything to be easy with LaslesVPN.
+                </p>
+                <p>Provide a network for all your needs with ease and fun using LaslesVPN discover interesting features
+                    from us.</p>
+                <button>
+                    Get started
+                </button>
+
+            </div>
+            <div>
+                <img src="./Illustration 1.png" alt="">
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script>
+
+        console.log("js linked")
+
+        function toggleSidebar() {
+            document.getElementById("sidebar").classList.toggle("active")
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>

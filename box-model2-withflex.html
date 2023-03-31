@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .text-red {
+            color: red;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+            padding: 20px;
+            margin-left: 30px;
+            margin-bottom: 10px;
+        }
+
+        .products {
+            display: flex;
+            margin: 30px;
+        }
+
+        .product {
+            margin-bottom: 10px;
+            padding: 10px;
+            box-shadow: 9px 1px 15px -5px gray;
+            text-align: center;
+            margin-right: 1em;
+            background-color: whitesmoke;
+            border-radius: 10px;
+        }
+
+        .product-image {
+            width: 100%;
+            max-height: 250px;
+            object-fit: cover;
+        }
+
+        .parent {
+            background-color: teal;
+            width: 500px;
+            color: white;
+        }
+
+        .child {
+            background-color: cyan;
+            width: 50%;
+        }
+
+        .product-price {
+            /* font-size: 32px; */
+            font-size: 2em;
+            font-size: 2rem;
+        }
+
+        .product-description {
+            text-align: justify;
+            border-top: 1px solid gray;
+            margin-top: 10px;
+            padding-top: 10px;
+        }
+
+        .half {
+            width: 50%;
+        }
+
+        body {
+            margin-left: 1em;
+            font-family: 'Alkatra', cursive;
+            font-family: roboto, sans-serif;
+            background-color: gray;
+            background-color: rgb(255, 255, 0);
+            background-color: magenta;
+            background-color: #F0F8FF;
+
+        }
+
+        .container {
+            background-color: teal;
+        }
+
+        .item {
+            background-color: cyan;
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+        }
+
+        .products>p {
+            font-size: 32px;
+            margin-bottom: 16px;
+        }
+
+        .product img {
+            border-radius: 10px;
+        }
+
+        /* 
+            deskotop first  //max-width
+            mobile first 
+         */
+
+        /* @media (<berak points >) { */
+        @media (max-width:678px) {
+            body {
+                background-color: orange;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="">
+
+    </header>
+    <main id="">
+        <p><b>Products </b></p>
+        <div class="products">
+            <div class="product">
+                <img width="100" class="product-image"
+                    src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?" alt="">
+                <p class="product-price">$100</p>
+                <p>shirt</p>
+                <p class="product-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
+                    repellendus,
+                    ducimus odio doloribus sequi officia harum voluptate ratione cum et repudiandae inventore rerum!
+                    Ratione
+                    at tenetur eveniet laborum aliquam rerum!</p>
+            </div>
+            <div class="product">
+                <img class="product-image" src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a" alt="">
+                <p class="product-price">$100</p>
+                <p>shirt</p>
+                <p class="product-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
+                    repellendus,
+                    ducimus odio doloribus sequi officia harum voluptate ratione cum et repudiandae inventore rerum!
+                    Ratione
+                    at tenetur eveniet laborum aliquam rerum!</p>
+            </div>
+            <div class="product">
+                <img class="product-image" src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a" alt="">
+                <p class="product-price">$100</p>
+                <p>shirt</p>
+                <p class="product-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
+                    repellendus,
+                    ducimus odio doloribus sequi officia harum voluptate ratione cum et repudiandae inventore rerum!
+                    Ratione
+                    at tenetur eveniet laborum aliquam rerum!</p>
+            </div>
+            <div class="product">
+                <img class="product-image" src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a" alt="">
+                <p class="product-price">$100</p>
+                <p>shirt</p>
+                <p class="product-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
+                    repellendus,
+                    ducimus odio doloribus sequi officia harum voluptate ratione cum et repudiandae inventore rerum!
+                    Ratione
+                    at tenetur eveniet laborum aliquam rerum!</p>
+            </div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .flexbox {
+            height: 400px;
+            background-color: teal;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flex-item {
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+            background-color: cyan;
+        }
+
+        .parent {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: teal;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .child {
+            color: white;
+            height: 100px;
+            width: 20%;
+            border: 1px solid white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 
+    <div class="flexbox">
+        <div class="flex-item"></div>
+        <div class="flex-item"></div>
+        <div class="flex-item"></div>
+        <div class="flex-item"></div>
+    </div> -->
+
+    <div class="parent">
+        <div class="child">
+            <p>one</p>
+            <p>two</p>
+        </div>
+        <div class="child"></div>
+        <div class="child"></div>
+
+    </div>
+
+
+    <hr>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, neque voluptatem! Itaque, expedita. Harum
+        dolores blanditiis soluta natus officia culpa velit quia ea est distinctio nam itaque delectus, rem quos.</p>
+
+</body>
+
+</html>

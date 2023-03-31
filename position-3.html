@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+        }
+
+        .static {
+            position: static;
+        }
+
+        .relative {
+            position: relative;
+            /* left: 100px; */
+        }
+
+        .absolute {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            background-color: orange;
+        }
+
+        .fixed {
+            /* position: fixed; */
+        }
+
+        .sticky {
+            /* position: sticky; */
+        }
+
+        main {
+            height: 300vh;
+
+        }
+
+        .parent {
+            height: 300px;
+            background-color: teal;
+            width: 50%;
+        }
+
+        .child {
+            background-color: white;
+        }
+
+        .child.first {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <header> -->
+    <div>
+        facebook
+    </div>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">home</a>
+            </li>
+            <li>
+                <a href="#">home</a>
+            </li>
+            <li>
+                <a href="#">home</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- </header> -->
+
+    <h1>postions</h1>
+    <div class="box static"> static</div>
+    <div class="box relative"> relative</div>
+    <div class="box absolute">normal absolute</div>
+    <div class="box fixed"> fixed</div>
+
+    <div class="grand-parent">
+        <div class="parent ">
+            <div class="child  box first">child elment inside relative first child</div>
+            <div class="child  box">child elment second child</div>
+        </div>
+    </div>
+    <main>
+
+    </main>
+
+</body>
+
+</html>
