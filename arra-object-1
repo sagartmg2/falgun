@@ -1,0 +1,35 @@
+
+let paragarph = "loream ipusum ...... "
+let age = 10
+let status = true
+let property = undefined
+let db_data = null
+
+
+// let color = "red","orange" XX
+/* array -> INDEX -> index always starts with 0 */
+let colors = ["red", "orange", "black"]
+
+let watch1 = {
+    price: 1000,
+    matrial: "stainless steel"
+}
+
+let watch2 = {
+    brands: ["gshock", "sony"],
+    price: 10000,
+}
+
+console.log(watch2.brands); // [gshock,sony]
+watch2.brands[0] = "casio"
+
+
+console.log("prev", watch2.price);
+watch2.price = 5000
+console.log(watch2);
+
+// console.log("prev", colors[2]);
+// colors[2] = "white"
+// console.log(colors);
+
+
