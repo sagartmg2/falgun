@@ -95,7 +95,7 @@ let todo_list = [
         "userId": 1,
         "id": 2,
         "title": " css ",
-        "completed": false
+        "completed": true
     },
     {
         "userId": 1,
@@ -105,17 +105,61 @@ let todo_list = [
     },
 ]
 
+console.log(todo_list[0]); // first element 
+console.log(todo_list[0].completed); // true 
+
+let given_condition = true
+/* if (<condition>) */
+
+if (given_condition) {
+    console.log("truthy condition");
+} else {
+    console.log("false condition ");
+}
+
+
+
+
+
+
+
+
+
+
+
+// if (todo_list[1].completed) {  // if(true)
+//     console.log(` ${todo_list[1].title} is  complted`);
+// } else {
+//     console.log(` ${todo_list[1].title} is  pending`);
+// }
+
+
+// if (todo_list[2].completed) {  // if(false)
+//     console.log(` ${todo_list[2].title} is  complted`);
+// } else {
+//     console.log(` ${todo_list[2].title} is  pending`);
+// }
+
 /* output 
     html is completed 
     css is compolted 
     js is pending
 */
 
+function printInfo(index) { // index here is called as parameter
 
+    let todo_element = todo_list[index]
 
+    if (todo_element.completed) {  // if(true)
+        console.log(` ${todo_element.title} is  complted`);
+    } else {
+        console.log(` ${todo_element.title} is  pending`);
+    }
+}
 
-
-
+printInfo(0) // 0 here is arguement
+printInfo(1)
+printInfo(2)
 
 
 
