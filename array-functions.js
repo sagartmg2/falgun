@@ -108,9 +108,6 @@ console.log(sum(2, 3, 5));
 console.log(sum(4, 3));
 
 
-
-
-
 clauclateSum(1, 2, 3, 4, 5, 6, 7) // ...rest operator 
 
 

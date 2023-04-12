@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="body">
+
+    <!--  -->
+
+    <h1>event and listener</h1>
+    <button id="btn">button usinge event listener</button>
+    <button id="btn2" onclick="changeBgColor()">button </button>
+
+    <script src="./index.js"></script>
+    <script>
+
+        console.log("js wihtin html");
+
+        const changeBgColor = () => {
+            console.log("chnage bg color");
+
+            // document.getElementById("body").classList.add("dark")
+            // document.getElementById("body").classList.remove("dark")
+            // document.getElementById("body").classList.toglle("dark")
+            document.getElementById("body").style.backgroundColor = "black"
+            document.getElementById("body").style.color = "white"
+        }
+
+        document.getElementById("btn").addEventListener("click", changeBgColor)
+
+
+    </script>
+</body>
+
+
+
+</html>
