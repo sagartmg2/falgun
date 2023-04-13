@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body.dark {
+            background-color: black;
+            color: white
+        }
+
+        .dark #btn-dark {
+            display: none;
+        }
+
+        #btn-light {
+            display: none;
+        }
+
+        .dark #btn-light {
+            display: initial;
+        }
+    </style>
+</head>
+
+<body id="body">
+
+
+    <pre>
+        when we click the dark theme button, the background color of page should be dark and vice versa.
+
+        and if it is dark theme, the button-dark theme should not be displayed. 
+    </pre>
+
+    <!-- <button id="btn-dark" onclick="changeTheme('dark')">dark theme</button>
+    <button id="btn-light" onclick="changeTheme('light')">light theme</button> -->
+
+    <button id="btn-dark" onclick="toggleTheme()">dark theme</button>
+    <button id="btn-light" onclick="toggleTheme()">light theme</button>
+
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, illum in eos porro, neque nulla,
+        exercitationem repudiandae fugit qui eum consequatur nostrum ad. Ea rem ipsam repellendus reiciendis dolores
+        officiis!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, illum in eos porro, neque nulla,
+        exercitationem repudiandae fugit qui eum consequatur nostrum ad. Ea rem ipsam repellendus reiciendis dolores
+        officiis!
+
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, illum in eos porro, neque nulla,
+        exercitationem repudiandae fugit qui eum consequatur nostrum ad. Ea rem ipsam repellendus reiciendis dolores
+        officiis!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, illum in eos porro, neque nulla,
+        exercitationem repudiandae fugit qui eum consequatur nostrum ad. Ea rem ipsam repellendus reiciendis dolores
+        officiis!
+
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, illum in eos porro, neque nulla,
+        exercitationem repudiandae fugit qui eum consequatur nostrum ad. Ea rem ipsam repellendus reiciendis dolores
+        officiis!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, illum in eos porro, neque nulla,
+        exercitationem repudiandae fugit qui eum consequatur nostrum ad. Ea rem ipsam repellendus reiciendis dolores
+        officiis!
+
+    </p>
+
+
+    <script>
+
+        function toggleTheme() {
+            // document.getElementById("body").classList.add
+            // document.getElementById("body").classList.remove
+            document.getElementById("body").classList.toggle("dark")
+        }
+
+        function changeTheme(theme) {
+            document.getElementById("body").style.backgroundColor = (theme == "dark") ? "black" : "white"
+            document.getElementById("body").style.color = (theme == "dark") ? "white" : "black"
+        }
+
+        function applyDark() {
+            document.getElementById("body").style.backgroundColor = "black"
+            document.getElementById("body").style.color = "white"
+
+        }
+
+        function applyLight() {
+            document.getElementById("body").style.backgroundColor = "white"
+            document.getElementById("body").style.color = "black"
+
+        }
+
+    </script>
+
+</body>
+
+</html>

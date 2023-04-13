@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>todo list</h1>
+
+    <form onsubmit="handleFormSubmit(event)">
+        <div>
+            <label for="">name </label>
+            <input type="text" required>
+        </div>
+        <div> <label for="">number</label>
+            <input type="number" placeholder="price" step="0.50" max="200">
+        </div>
+        <div> <label for="">password</label> <input minlength="8" type="password" placeholder="password"></div>
+        <div> <label for="">email</label> <input type="email" placeholder="email"></div>
+        <div>
+            <label for="">transportation</label>
+            <select>
+                <option> car </option>
+                <option> bike </option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" name="" id="terms">
+            <label for="terms">agree terms and condition</label>
+        </div>
+        <div>
+            <input type="file" multiple accept="image/*">
+        </div>
+        <div>
+            <input type="date">
+        </div>
+        <div>
+            <input type="search">
+        </div>
+        <div>
+            <input type="reset">
+        </div>
+        <button type="submit">submit</button>
+        <!-- <div> <input type="submit"></div> -->
+
+    </form>
+
+    <script>
+        function handleFormSubmit(event) {
+            event.preventDefault() // prevents page refresh
+            console.log("handle form submit");
+        }
+    </script>
+</body>
+
+</html>
