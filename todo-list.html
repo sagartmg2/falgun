@@ -12,11 +12,11 @@
     <h1>todo list</h1>
 
     <form onsubmit="addTodo(event)">
-        <input id="todo-title" name="todo-title" type="text" required>
+        <input id="todo-title" name="todo-title" type="text" required value="">
         <input type="submit" value="submit">
     </form>
     <hr>
-    <ul>
+    <ul id="todo-list">
         <li>css</li>
         <li>html</li>
     </ul>
@@ -27,6 +27,13 @@
             console.log("handle form submit");
             console.log(event.target);
             console.log(event.target["todo-title"].value);
+
+            let new_li = document.createElement("li")
+            new_li.innerText = event.target["todo-title"].value
+            document.getElementById("todo-list").appendChild(new_li)
+
+            event.target["todo-title"].value = ""
+            
         }
     </script>
 </body>
